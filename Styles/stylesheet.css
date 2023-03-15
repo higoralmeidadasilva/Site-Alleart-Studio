@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:wght@700&display=swap');
+
+*{
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    color: #333;
+}
+
+/* Corpo da página, títulos e botões*/
+
+body{
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+}
+
+h1, h2, h3{
+    font-family: 'Asap', sans-serif;
+    color: #410b0b;
+}
+
+.botao{
+    background-color: #b05656;
+    padding: 10px 30px;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+}
+button a {
+    color: #fff;
+    font-size: .9em;
+}
+button:hover{
+    background-color: #924040;
+    box-shadow: rgba(0, 0, 0, 0.295) 5px 5px 10px;
+}
+
+/* Navegação */
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li{
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    width: 100%;
+    font-size: larger;
+    color: #410b0b;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+    color: #d87676;
+}
+
+.principal{
+    padding: 10px 0px;
+    margin-right: 70px;
+}
+
+.redes-sociais ul li{
+    padding: 10px 0px;
+    margin: 0px 10px;
+}
+
+/* cabeçalho */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../imagens/estudio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: larger;
+    color: #fff;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+/* Quem Somos */
+
+#quem-somos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 30px 20px;
+    background-color: #f2efef;
+    color: #1c1c1c;
+}
+
+#quem-somos p{
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+/* Serviços */
+
+#servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#servicos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Portifólio */
+
+#portifolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#portifolio h2{
+    margin-bottom: 40px;
+}
+
+#portifolio img{
+    width: 100%;
+}
+
+/* Contato */
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+#contato p {
+    margin-bottom: 80px;
+    font-size: large;
+}
+
+#contato a {
+    text-decoration: underline;
+
+}
+
+/* Rodapé */
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #f2efef;
+}
+
+footer p{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+@media screen and (min-width: 78px){
+    /* navegação */
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+
+    /* Cabeçalho */
+    header{
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    /* Quem Somos */
+    #quem-somos{
+        height: 250px;
+        height: 50vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    /* Serviços */
+    #servicos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    #servicos h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    #servicos div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+}
