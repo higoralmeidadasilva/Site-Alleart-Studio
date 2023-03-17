@@ -20,18 +20,18 @@ h1, h2, h3{
 }
 
 .botao{
-    background-color: #b05656;
+    color: #fff;
+    background-color: #924040;
+    padding: 10px 30px; 
+    border-radius: 3px;
+    font-size: .9em;
     padding: 10px 30px;
     transition: 0.3s ease-in-out;
-    border-radius: 5px;
 }
-button a {
-    color: #fff;
-    font-size: .9em;
-}
-button:hover{
-    background-color: #924040;
-    box-shadow: rgba(0, 0, 0, 0.295) 5px 5px 10px;
+
+.botao:hover{
+    background-color: #b05656;
+    box-shadow: rgba(0, 0, 0, 0.295) 8px 8px 5px;
 }
 
 /* Navegação */
@@ -46,6 +46,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px;
     width: 100%;
 }
 
@@ -73,7 +74,7 @@ nav ul li a:hover{
 
 .redes-sociais ul li{
     padding: 10px 0px;
-    margin: 0px 10px;
+    margin-left: 10px;
 }
 
 /* cabeçalho */
@@ -182,7 +183,7 @@ footer p{
     margin-bottom: 0px;
 }
 
-@media screen and (min-width: 78px){
+@media screen and (min-width: 768px){
     /* navegação */
     nav{
         flex-direction: row;
@@ -225,5 +226,33 @@ footer p{
         flex-grow: 1;
         flex-basis: 150px;
         padding: 0 10px;
+    }
+
+    /* Portifolio */
+    #portifolio{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #portifolio h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    #portifolio img{
+        width: 33.3333333%;
+    }
+
+    /* Contato */
+
+    #contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    #contato h2, #contato p{
+        width: 100%;
     }
 }
